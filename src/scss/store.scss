@@ -1,0 +1,73 @@
+.store{
+    &-container{
+        margin-top: 60px;
+        @include for-desktop-HD{
+            margin-top: 120px;
+        }
+    }
+    &__title{
+        &-word{
+            color: var(--orange);
+        }
+    }
+    &__container{
+        &-text{
+            display: none;
+            &-button{
+                display: inline-block;
+                font-size: 20px;
+                line-height: 150%;
+            }
+            margin: {
+                top: 40px;
+                bottom: 30px;
+            }
+            display: block;
+            display: flex;
+            justify-content: space-between;
+        }
+         
+    }
+    &__cards{
+        @include for-desktop{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__card{
+        max-width: 364px;
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 30px;
+        }
+        @include for-desktop{
+            margin: {
+                left: 0px;
+                right: 0px;
+            }
+            max-width: none;
+            width: 364px;
+        }
+        &-img{
+            width: 100%;
+        }
+        &-title{
+            margin-top: 20px;
+            text-align: center;
+            @include for-desktop{
+                text-align: left;
+            }
+        }
+        &-subtitle{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            margin-top: 7px;
+            text-align: center;
+            @include for-desktop{
+                text-align: left;
+            }
+        }
+    }
+}

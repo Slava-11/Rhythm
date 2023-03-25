@@ -1,0 +1,89 @@
+.customers{
+    &-container{
+        padding-top: 120px;
+        @include for-desktop-HD{
+            padding-top: 240px;
+        }
+    }
+    &__title{
+        &-word{
+            color: var(--orange);
+        }
+    }
+    &__container{
+        
+        @include for-desktop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 109px;
+        }
+        @include for-desktop{
+            justify-content: center;
+            gap: 146px;
+        }
+    }
+    &__img{
+        max-width: 407px;
+        margin: {
+            top: 50px;
+            left: auto;
+            right: auto;
+        }
+        @include for-desktop{
+            margin: 0px;
+        }
+        &-photo{
+            width: 100%;
+        }
+    }
+    &__text{
+        max-width: 524px;
+        margin: {
+            top: 30px;
+            left: auto;
+            right: auto;
+        }
+        @include for-desktop{
+            margin: 0px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 160%;
+        }
+        &-title{
+            font-size: 24px;
+            line-height: 160%;
+            margin-top: 20px;
+            @include for-desktop-HD{
+                margin-top: 56px;
+            }
+        }
+        &-subtitle{
+            font-size: 18px;
+            letter-spacing: 8%;
+            color: var(--textColor);
+            position: relative;
+            margin-top: 8px;
+        }
+    }
+}
+
+.swiper-pagination{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    width: 10px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: var(--orange);
+    transition: .3s;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    width: 24px;
+    height: 12;
+    transition: .3s;
+}

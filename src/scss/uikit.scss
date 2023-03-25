@@ -1,0 +1,67 @@
+.app-title-h1{
+            font-size: 46px;
+            font-weight: 600;
+            font-family: "Cal Sans";
+            color: var(--titleColor);
+            line-height: 120%;
+            @include for-desktop{
+                font-size: 56px;
+            }
+}
+.app-title-h2 {
+    font-family: "Cal Sans";
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--titleColor);
+}
+.app-title-h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    color: var(--titleColor);
+}
+.app-title-h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--titleColor);
+}
+.app-title-p {
+    margin-top: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--textColor);
+}
+.app-button {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--buttonColor);
+    &:hover{
+        transition: .3s;
+        color: #010101;
+    }
+    &:active{
+        transition: .2s;
+        color: var(--gray);
+    }
+}
+ 
+.sectiont-title{
+    font-family: "Cal Sans";
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--titleColor);
+}
+ 
