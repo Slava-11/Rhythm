@@ -52,7 +52,7 @@
             }
         }
         &-burger{
-            @include for-tablet{
+            @include for-desktop{
                 display: none;
             }
             cursor: pointer;
