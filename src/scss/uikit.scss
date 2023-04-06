@@ -46,6 +46,7 @@
     font-weight: 500;
     line-height: 150%;
     color: var(--buttonColor);
+    transition: .3s;
     &:hover{
         transition: .3s;
         color: #010101;
